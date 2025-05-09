@@ -1,0 +1,31 @@
+.faq-item {
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #fefefe;
+  transition: box-shadow 0.2s ease;
+}
+
+.faq-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.question {
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  padding: 0;
+  color: #444;
+}
+
+.answer.show {
+  max-height: 200px;
+  padding-top: 8px;
+}
